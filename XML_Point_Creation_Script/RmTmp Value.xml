@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSet ExportMode="Standard" Note="TypesFirst" SemanticsFilter="Standard" Version="5.0.3.117">
+  <MetaInformation>
+    <ExportMode Value="Standard"/>
+    <SemanticsFilter Value="None"/>
+    <RuntimeVersion Value="5.0.3.117"/>
+    <SourceVersion Value="5.0.3.117"/>
+    <ServerFullPath Value="/Flr_W2_01"/>
+  </MetaInformation>
+<ExportedObjects>
+  <OI DESCR="Room Temperature" NAME="VAV_D2_101_RmTmp" TYPE="server.point.AV">
+    <PI Name="Value" Unit="0x280003"/>
+  </OI>
+</ExportedObjects>
+
+</ObjectSet>

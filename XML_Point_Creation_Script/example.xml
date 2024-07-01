@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSet ExportMode="Standard" Note="TypesFirst" SemanticsFilter="Standard" Version="5.0.3.117">
+  <MetaInformation>
+    <ExportMode Value="Standard"/>
+    <SemanticsFilter Value="None"/>
+    <RuntimeVersion Value="5.0.3.117"/>
+    <SourceVersion Value="5.0.3.117"/>
+    <ServerFullPath Value="/Flr_P2_01"/>
+  </MetaInformation>
+<ExportedObjects>
+	<OI DESCR="Reheat Valve Position" NAME="VAV_D2_301_RhtVlvPos" TYPE="server.point.AV"/>
+	<OI DESCR="Room Temperature" NAME="VAV_D2_301_RmTmp" TYPE="server.point.AV"/>
+	<OI DESCR="Static Pressure Reset Request" NAME="VAV_D2_301_StPrRstReq" TYPE="server.point.AV"/>
+	<OI DESCR="Reheat Valve Position" NAME="VAV_D2_302_RhtVlvPos" TYPE="server.point.AV"/>
+	<OI DESCR="Room Temperature" NAME="VAV_D2_302_RmTmp" TYPE="server.point.AV"/>
+	<OI DESCR="Static Pressure Reset Request" NAME="VAV_D2_302_StPrRstReq" TYPE="server.point.AV"/>
+	<OI DESCR="Reheat Valve Position" NAME="VAV_D2_303_RhtVlvPos" TYPE="server.point.AV"/>
+	<OI DESCR="Room Temperature" NAME="VAV_D2_303_RmTmp" TYPE="server.point.AV"/>
+	<OI DESCR="Static Pressure Reset Request" NAME="VAV_D2_303_StPrRstReq" TYPE="server.point.AV"/>
+	<OI DESCR="Reheat Valve Position" NAME="VAV_D2_304_RhtVlvPos" TYPE="server.point.AV"/>
+	<OI DESCR="Room Temperature" NAME="VAV_D2_304_RmTmp" TYPE="server.point.AV"/>
+	<OI DESCR="Static Pressure Reset Request" NAME="VAV_D2_304_StPrRstReq" TYPE="server.point.AV"/>
+	<OI DESCR="Reheat Valve Position" NAME="VAV_D2_305_RhtVlvPos" TYPE="server.point.AV"/>
+	<OI DESCR="Room Temperature" NAME="VAV_D2_305_RmTmp" TYPE="server.point.AV"/>
+	<OI DESCR="Static Pressure Reset Request" NAME="VAV_D2_305_StPrRstReq" TYPE="server.point.AV"/>
+</ExportedObjects>
+
+</ObjectSet>

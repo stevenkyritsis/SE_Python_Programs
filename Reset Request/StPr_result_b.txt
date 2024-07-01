@@ -1,0 +1,118 @@
+Sum1 = Sum(VAVStPrRstReq1,VAVStPrRstReq2,VAVStPrRstReq3,VAVStPrRstReq4,VAVStPrRstReq5,VAVStPrRstReq6,VAVStPrRstReq7,VAVStPrRstReq8,VAVStPrRstReq9,)
+Sum2 = Sum(VAVStPrRstReq10,VAVStPrRstReq11,VAVStPrRstReq12,VAVStPrRstReq13,VAVStPrRstReq14,VAVStPrRstReq15,VAVStPrRstReq16,VAVStPrRstReq17,VAVStPrRstReq18,VAVStPrRstReq19,)
+Sum3 = Sum(VAVStPrRstReq20,VAVStPrRstReq21,VAVStPrRstReq22,VAVStPrRstReq23,VAVStPrRstReq24,VAVStPrRstReq25,VAVStPrRstReq26,VAVStPrRstReq27,VAVStPrRstReq28,)
+
+Numeric Input VAVStPrRstReq1
+Numeric Input VAVStPrRstReq2
+Numeric Input VAVStPrRstReq3
+Numeric Input VAVStPrRstReq4
+Numeric Input VAVStPrRstReq5
+Numeric Input VAVStPrRstReq6
+Numeric Input VAVStPrRstReq7
+Numeric Input VAVStPrRstReq8
+Numeric Input VAVStPrRstReq9
+Numeric Input VAVStPrRstReq10
+Numeric Input VAVStPrRstReq11
+Numeric Input VAVStPrRstReq12
+Numeric Input VAVStPrRstReq13
+Numeric Input VAVStPrRstReq14
+Numeric Input VAVStPrRstReq15
+Numeric Input VAVStPrRstReq16
+Numeric Input VAVStPrRstReq17
+Numeric Input VAVStPrRstReq18
+Numeric Input VAVStPrRstReq19
+Numeric Input VAVStPrRstReq20
+Numeric Input VAVStPrRstReq21
+Numeric Input VAVStPrRstReq22
+Numeric Input VAVStPrRstReq23
+Numeric Input VAVStPrRstReq24
+Numeric Input VAVStPrRstReq25
+Numeric Input VAVStPrRstReq26
+Numeric Input VAVStPrRstReq27
+Numeric Input VAVStPrRstReq28
+
+<PI Name="VAVStPrRstReq1">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1016/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq2">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1017/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq3">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1019/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq4">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1107/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq5">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1109/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq6">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1111/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq7">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1113/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq8">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1115/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq9">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1117/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq10">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1118/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq11">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1118_1/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq12">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1118_2/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq13">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1121/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq14">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1124/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq15">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1127/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq16">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1129/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq17">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1130/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq18">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1132/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq19">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1132_1/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq20">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1133/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq21">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1134/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq22">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1138/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq23">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1139/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq24">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1140/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq25">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1141/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq26">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1144/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq27">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1146/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVStPrRstReq28">
+	<Reference DeltaFilter="0" Object="../../../MPV/VAVB1146B/Application/Values/StPrRstReq" Property="Priority16" Retransmit="0" TransferRate="10"/>
+</PI>
+

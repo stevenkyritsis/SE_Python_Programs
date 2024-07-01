@@ -1,0 +1,33 @@
+<PI Name="VAVRmTmp1">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB1129/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp2">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB1116/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp3">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB1106/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp4">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB1118/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp5">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB2117/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp6">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB2124/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp7">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB2106/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp8">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB3117/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp9">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB3107/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp10">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB3129/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>
+<PI Name="VAVRmTmp11">
+	<Reference DeltaFilter="0" Object="../../MPV/VAVB3120/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+</PI>

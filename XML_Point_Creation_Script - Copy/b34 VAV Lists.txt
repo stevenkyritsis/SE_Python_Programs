@@ -1,0 +1,55 @@
+AWing Do first
+
+CALC3:
+' Stats Calculations
+' ==========================================
+' replace t1, t2, etc with correct tcx space temp sensors
+' ==========================================
+  MinTmp[2] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVA2031\AvgTemp, Continuum1\b34c2\TCXVAVA2054\AvgTemp, Continuum1\b34c2\TCXVAVA2114BDEMO\AvgTemp, Continuum1\b34c2\TCXVAVA2022\AvgTemp)
+  MinTmp[3] = LmtdMin.Fct(30, 100, Continuum1\b34c1\TCXVAVA3058\AvgTemp, Continuum1\b34c1\TCXVAVA3056\AvgTemp, Continuum1\b34c1\TCXVAVA3030_31\AvgTemp) 'Continuum1\b34c1\TCXVAVA3023\AvgTemp, 
+  MinTmp[4] = LmtdMin.Fct(30, 100, Continuum1\b34c1\TCXVAVA4031\AvgTemp, Continuum1\b34c1\TCXVAVA4022\AvgTemp, Continuum1\b34c1\TCXVAVA4056\AvgTemp, Continuum1\b34c1\TCXVAVA4058\AvgTemp)
+  MinTmp[5] = LmtdMin.Fct(30, 100, Continuum1\b34c1\TCXVAVA5031\AvgTemp, Continuum1\b34c1\TCXVAVA5022\AvgTemp, Continuum1\b34c1\TCXVAVA5056\AvgTemp, Continuum1\b34c1\TCXVAVA5058\AvgTemp)
+
+  MaxTmp[2] = LmtdMax.Fct(30, 100, Continuum1\b34c2\TCXVAVA2031\AvgTemp, Continuum1\b34c2\TCXVAVA2054\AvgTemp, Continuum1\b34c2\TCXVAVA2114BDEMO\AvgTemp, Continuum1\b34c2\TCXVAVA2022\AvgTemp)
+  MaxTmp[3] = LmtdMax.Fct(30, 100, Continuum1\b34c1\TCXVAVA3058\AvgTemp, Continuum1\b34c1\TCXVAVA3056\AvgTemp, Continuum1\b34c1\TCXVAVA3030_31\AvgTemp) 'Continuum1\b34c1\TCXVAVA3023\AvgTemp, 
+  MaxTmp[4] = LmtdMax.Fct(30, 100, Continuum1\b34c1\TCXVAVA4031\AvgTemp, Continuum1\b34c1\TCXVAVA4022\AvgTemp, Continuum1\b34c1\TCXVAVA4056\AvgTemp, Continuum1\b34c1\TCXVAVA4058\AvgTemp)
+  MaxTmp[5] = LmtdMax.Fct(30, 100, Continuum1\b34c1\TCXVAVA5031\AvgTemp, Continuum1\b34c1\TCXVAVA5022\AvgTemp, Continuum1\b34c1\TCXVAVA5056\AvgTemp, Continuum1\b34c1\TCXVAVA5058\AvgTemp)
+
+  AvgTmp[2] = LmtdAvg.Fct(30, 100, Continuum1\b34c2\TCXVAVA2031\AvgTemp, Continuum1\b34c2\TCXVAVA2054\AvgTemp, Continuum1\b34c2\TCXVAVA2114BDEMO\AvgTemp, Continuum1\b34c2\TCXVAVA2022\AvgTemp)
+  AvgTmp[3] = LmtdAvg.Fct(30, 100, Continuum1\b34c1\TCXVAVA3058\AvgTemp, Continuum1\b34c1\TCXVAVA3056\AvgTemp, Continuum1\b34c1\TCXVAVA3030_31\AvgTemp) 'Continuum1\b34c1\TCXVAVA3023\AvgTemp, 
+  AvgTmp[4] = LmtdAvg.Fct(30, 100, Continuum1\b34c1\TCXVAVA4031\AvgTemp, Continuum1\b34c1\TCXVAVA4022\AvgTemp, Continuum1\b34c1\TCXVAVA4056\AvgTemp, Continuum1\b34c1\TCXVAVA4058\AvgTemp)
+  AvgTmp[5] = LmtdAvg.Fct(30, 100, Continuum1\b34c1\TCXVAVA5031\AvgTemp, Continuum1\b34c1\TCXVAVA5022\AvgTemp, Continuum1\b34c1\TCXVAVA5056\AvgTemp, Continuum1\b34c1\TCXVAVA5058\AvgTemp)
+
+  Goto CALC4
+
+
+B WING
+CALC4:
+  MinTemp = minimum(MinTmp[2], MinTmp[3], MinTmp[4], MinTmp[5])
+  MaxTemp = maximum(MaxTmp[2], MaxTmp[3], MaxTmp[4], MaxTmp[5])
+  AvgTemp = average(AvgTmp[2], AvgTmp[3], AvgTmp[4], AvgTmp[5])
+
+
+
+CALC3:
+' Status Calculations - B-Wing
+' ==========================================
+' replace t1, t2, etc with correct B-Wing tcx space temp sensors
+' ==========================================
+  MinTmpB[1] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVB1129\AvgTemp, Continuum1\b34c2\TCXVAVB1116\AvgTemp, Continuum1\b34c2\TCXVAVB1106\AvgTemp, Continuum1\b34c2\TCXVAVB1118\AvgTemp)
+  MinTmpB[2] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVB2117\AvgTemp, Continuum1\b34c2\TCXVAVB2124\AvgTemp, Continuum1\b34c2\TCXVAVB2106\AvgTemp)
+  MinTmpB[3] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3107\AvgTemp, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3129\AvgTemp, Continuum1\b34c2\TCXVAVB3120\AvgTemp)
+
+  MaxTmpB[1] = LmtdMax.Fct(30, 100, Continuum1\b34c2\TCXVAVB1129\AvgTemp, Continuum1\b34c2\TCXVAVB1116\AvgTemp, Continuum1\b34c2\TCXVAVB1106\AvgTemp, Continuum1\b34c2\TCXVAVB1118\AvgTemp)
+  MaxTmpB[2] = LmtdMax.Fct(30, 100, Continuum1\b34c2\TCXVAVB2117\AvgTemp, Continuum1\b34c2\TCXVAVB2124\AvgTemp, Continuum1\b34c2\TCXVAVB2106\AvgTemp)
+  MaxTmpB[3] = LmtdMax.Fct(30, 100, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3107\AvgTemp, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3129\AvgTemp, Continuum1\b34c2\TCXVAVB3120\AvgTemp)
+  Goto CALC4
+
+CALC4:
+  AvgTmpB[1] = LmtdAvg.Fct(30, 100, Continuum1\b34c2\TCXVAVB1129\AvgTemp, Continuum1\b34c2\TCXVAVB1116\AvgTemp, Continuum1\b34c2\TCXVAVB1106\AvgTemp, Continuum1\b34c2\TCXVAVB1118\AvgTemp)
+  AvgTmpB[2] = LmtdAvg.Fct(30, 100, Continuum1\b34c2\TCXVAVB2117\AvgTemp, Continuum1\b34c2\TCXVAVB2124\AvgTemp, Continuum1\b34c2\TCXVAVB2106\AvgTemp)
+  AvgTmpB[3] = LmtdAvg.Fct(30, 100, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3107\AvgTemp, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3129\AvgTemp, Continuum1\b34c2\TCXVAVB3120\AvgTemp)
+
+  MinTemp_BWing = minimum(MinTmpB[1], MinTmpB[2], MinTmpB[3])
+  MaxTemp_BWing = maximum(MaxTmpB[1], MaxTmpB[2], MaxTmpB[3])
+  AvgTemp_BWing = average(AvgTmpB[1], AvgTmpB[2], AvgTmpB[3])

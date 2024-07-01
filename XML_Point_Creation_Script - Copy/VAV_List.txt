@@ -1,0 +1,3 @@
+  MinTmpB[1] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVB1129\AvgTemp, Continuum1\b34c2\TCXVAVB1116\AvgTemp, Continuum1\b34c2\TCXVAVB1106\AvgTemp, Continuum1\b34c2\TCXVAVB1118\AvgTemp)
+  MinTmpB[2] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVB2117\AvgTemp, Continuum1\b34c2\TCXVAVB2124\AvgTemp, Continuum1\b34c2\TCXVAVB2106\AvgTemp)
+  MinTmpB[3] = LmtdMin.Fct(30, 100, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3107\AvgTemp, Continuum1\b34c2\TCXVAVB3117\AvgTemp, Continuum1\b34c2\TCXVAVB3129\AvgTemp, Continuum1\b34c2\TCXVAVB3120\AvgTemp)

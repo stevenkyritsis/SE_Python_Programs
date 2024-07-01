@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSet ExportMode="Special" Note="TypesFirst" SemanticsFilter="Special" Version="5.0.3.2000">
+  <MetaInformation>
+    <ExportMode Value="Special"/>
+    <SemanticsFilter Value="None"/>
+    <RuntimeVersion Value="5.0.3.2000"/>
+    <SourceVersion Value="5.0.3.2000"/>
+    <ServerFullPath Value="/b34-5thFloor"/>
+  </MetaInformation>
+  <Types>
+    <ObjectType Name            = "udt.zd62lcyc35euhoohzdwu3g4ubu.sezzvhaqz3jarqry26ljr2orltxyjzxq"
+                DisplayName     = ""
+                Description     = ""
+                Base            = "script.Program"
+                Icon            = ""
+                Abstract        = "0"
+                Implements      = ""
+                DefaultProperty = ""
+                Version         = "1"
+                >
+      <PropertyTab Name = "BASIC">
+        <PropertyGroup Name = "STATUS">
+          <Parameter Name                  = "Complete"
+                     DisplayName           = "Compilation valid"
+                     Description           = "Tells if the program is complete and that it can be run by the server"
+                     Visibility            = "Summary"
+                     Optional              = "0"
+                     ReadOnly              = "1"
+                     Static                = "1"
+                     RTWriteable           = "0"
+                     Unique                = "No"
+                     Copy                  = "0"
+                     Nullable              = "0"
+                     >
+              <Type Configurable = "No" Value = "system.pt.Boolean"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitValue Value="1"/>
+          </Parameter>
+          <Parameter Name                  = "CompilerVersion"
+                     DisplayName           = "Compiler version"
+                     Description           = "Compiler version"
+                     Visibility            = "Normal"
+                     Optional              = "0"
+                     ReadOnly              = "1"
+                     Static                = "1"
+                     RTWriteable           = "0"
+                     Unique                = "No"
+                     Copy                  = "0"
+                     Nullable              = "0"
+                     >
+              <Type Configurable = "No" Value = "system.pt.String"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitValue Value="1"/>
+          </Parameter>
+        </PropertyGroup>
+        <PropertyGroup Name = "CONFIGURATION">
+          <Parameter Name                  = "File"
+                     DisplayName           = "File"
+                     Description           = "Script Program file"
+                     Visibility            = "Hidden"
+                     Optional              = "0"
+                     ReadOnly              = "1"
+                     Static                = "1"
+                     RTWriteable           = "0"
+                     Unique                = "No"
+                     Copy                  = "0"
+                     Nullable              = "0"
+                     >
+              <Type Configurable = "No" Value = "system.pt.String"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitValue Value="&lt;PEObject CompilationSuccess=&quot;true&quot; DateChanged=&quot;2460446.200444711&quot; LineNumberDeclarationsEnd=&quot;8&quot; LineProgramEntry=&quot;0&quot; ProgramEntry=&quot;241&quot; ScriptCompilerVersion=&quot;1&quot; ScriptObjectType=&quot;1&quot; Version=&quot;1&quot;&gt;&#xA; &lt;Code CodeEncrypted=&quot;false&quot; Version=&quot;1&quot;&gt;TnVtZXJpYyBJbnB1dCBWQVZSbVRtcDEsIFZBVlJtVG1wMiwgVkFWUm1UbXAzLCBWQVZSbVRt&#xD;&#xA;cDQsIFZBVlJtVG1wNSwgVkFWUm1UbXA2LCBWQVZSbVRtcDcsIFZBVlJtVG1wOCwgVkFWUm1U&#xD;&#xA;bXA5LCBWQVZSbVRtcDEwLCBWQVZSbVRtcDExLCBWQVZSbVRtcDEyLCBWQVZSbVRtcDEzLCBW&#xD;&#xA;QVZSbVRtcDE0LCBWQVZSbVRtcDE1LCBWQVZSbVRtcDE2LCBWQVZSbVRtcDE3LCBWQVZSbVRt&#xD;&#xA;cDE4Ck51bWVyaWMgSW5wdXQgVkFWUm1UbXAxOSwgVkFWUm1UbXAyMCwgVkFWUm1UbXAyMSwg&#xD;&#xA;VkFWUm1UbXAyMiwgVkFWUm1UbXAyMywgVkFWUm1UbXAyNCwgVkFWUm1UbXAyNSwgVkFWUm1U&#xD;&#xA;bXAyNiwgVkFWUm1UbXAyNywgVkFWUm1UbXAyOCwgVkFWUm1UbXAyOSwgVkFWUm1UbXAzMCwg&#xD;&#xA;VkFWUm1UbXAzMSwgVkFWUm1UbXAzMiwgVkFWUm1UbXAzMywgVkFWUm1UbXAzNCwgVkFWUm1U&#xD;&#xA;bXAzNSwgVkFWUm1UbXAzNgpOdW1lcmljIElucHV0IFZBVlJtVG1wMzcsIFZBVlJtVG1wMzgs&#xD;&#xA;IFZBVlJtVG1wMzksIFZBVlJtVG1wNDAsIFZBVlJtVG1wNDEsIFZBVlJtVG1wNDIsIFZBVlJt&#xD;&#xA;VG1wNDMsIFZBVlJtVG1wNDQsIFZBVlJtVG1wNDUsIFZBVlJtVG1wNDYsIFZBVlJtVG1wNDcs&#xD;&#xA;IFZBVlJtVG1wNDgsIFZBVlJtVG1wNDksIFZBVlJtVG1wNTAKTnVtZXJpYyBPdXRwdXQgQXZn&#xD;&#xA;VG1wLCBNYXhUbXAsIE1pblRtcApOdW1lcmljIEF2Z1RtcDEsIEF2Z1RtcDIsIEF2Z1RtcDMs&#xD;&#xA;IEF2Z1RtcDQsIEF2Z1RtcDUsIE1heFRtcDEsIE1heFRtcDIsIE1heFRtcDMsIE1heFRtcDQs&#xD;&#xA;IE1heFRtcDUsIE1pblRtcDEsIE1pblRtcDIsIE1pblRtcDMsIE1pblRtcDQsIE1pblRtcDUK&#xD;&#xA;RnVuY3Rpb24gTG10ZEF2Z19GY3QsIExtdGRNYXhfRmN0LCBMbXRkTWluX0ZjdAoKQ0FMQ1VM&#xD;&#xA;QVRFOgogQXZnVG1wMSA9IExtdGRBdmdfRmN0KDQwLCAxMDAsIFZBVlJtVG1wMSwgVkFWUm1U&#xD;&#xA;bXAyLCBWQVZSbVRtcDMsIFZBVlJtVG1wNCwgVkFWUm1UbXA1LCBWQVZSbVRtcDYsIFZBVlJt&#xD;&#xA;VG1wNywgVkFWUm1UbXA4LCBWQVZSbVRtcDksIFZBVlJtVG1wMTAsIFZBVlJtVG1wMTEpCiBB&#xD;&#xA;dmdUbXAyID0gTG10ZEF2Z19GY3QoNDAsIDEwMCwgVkFWUm1UbXAxMiwgVkFWUm1UbXAxMywg&#xD;&#xA;VkFWUm1UbXAxNCwgVkFWUm1UbXAxNSwgVkFWUm1UbXAxNiwgVkFWUm1UbXAxNywgVkFWUm1U&#xD;&#xA;bXAxOCwgVkFWUm1UbXAxOSwgVkFWUm1UbXAyMCwgVkFWUm1UbXAyMSwgVkFWUm1UbXAyMiwg&#xD;&#xA;VkFWUm1UbXAyMywgVkFWUm1UbXAyNCkKIEF2Z1RtcDMgPSBMbXRkQXZnX0ZjdCg0MCwgMTAw&#xD;&#xA;LCBWQVZSbVRtcDI1LCBWQVZSbVRtcDI2LCBWQVZSbVRtcDI3LCBWQVZSbVRtcDI4LCBWQVZS&#xD;&#xA;bVRtcDI5LCBWQVZSbVRtcDMwLCBWQVZSbVRtcDMxLFZBVlJtVG1wMzIsIFZBVlJtVG1wMzMs&#xD;&#xA;IFZBVlJtVG1wMzQsIFZBVlJtVG1wMzUsIFZBVlJtVG1wMzYpCiBBdmdUbXA0ID0gTG10ZEF2&#xD;&#xA;Z19GY3QoNDAsIDEwMCwgVkFWUm1UbXAzNywgVkFWUm1UbXAzOCwgVkFWUm1UbXAzOSwgVkFW&#xD;&#xA;Um1UbXA0MCwgVkFWUm1UbXA0MSwgVkFWUm1UbXA0MiwgVkFWUm1UbXA0MywgVkFWUm1UbXA0&#xD;&#xA;NCwgVkFWUm1UbXA0NSwgVkFWUm1UbXA0NiwgVkFWUm1UbXA0NywgVkFWUm1UbXA0OCkKIEF2&#xD;&#xA;Z1RtcDUgPSBMbXRkQXZnX0ZjdCg0MCwgMTAwLCBWQVZSbVRtcDQ5LCBWQVZSbVRtcDUwKQog&#xD;&#xA;QXZnVG1wID0gQXZlcmFnZShBdmdUbXAxLCBBdmdUbXAyLCBBdmdUbXAzLCBBdmdUbXA0LCBB&#xD;&#xA;dmdUbXA1KQoJCiBNYXhUbXAxID0gTG10ZE1heF9GY3QoNDAsIDEwMCwgVkFWUm1UbXAxLCBW&#xD;&#xA;QVZSbVRtcDIsIFZBVlJtVG1wMywgVkFWUm1UbXA0LCBWQVZSbVRtcDUsIFZBVlJtVG1wNiwg&#xD;&#xA;VkFWUm1UbXA3LCBWQVZSbVRtcDgsIFZBVlJtVG1wOSwgVkFWUm1UbXAxMCwgVkFWUm1UbXAx&#xD;&#xA;MSkKIE1heFRtcDIgPSBMbXRkTWF4X0ZjdCg0MCwgMTAwLCBWQVZSbVRtcDEyLCBWQVZSbVRt&#xD;&#xA;cDEzLCBWQVZSbVRtcDE0LCBWQVZSbVRtcDE1LCBWQVZSbVRtcDE2LCBWQVZSbVRtcDE3LCBW&#xD;&#xA;QVZSbVRtcDE4LCBWQVZSbVRtcDE5LCBWQVZSbVRtcDIwLCBWQVZSbVRtcDIxLCBWQVZSbVRt&#xD;&#xA;cDIyLCBWQVZSbVRtcDIzLCBWQVZSbVRtcDI0KQogTWF4VG1wMyA9IExtdGRNYXhfRmN0KDQw&#xD;&#xA;LCAxMDAsIFZBVlJtVG1wMjUsIFZBVlJtVG1wMjYsIFZBVlJtVG1wMjcsIFZBVlJtVG1wMjgs&#xD;&#xA;IFZBVlJtVG1wMjksIFZBVlJtVG1wMzAsIFZBVlJtVG1wMzEsVkFWUm1UbXAzMiwgVkFWUm1U&#xD;&#xA;bXAzMywgVkFWUm1UbXAzNCwgVkFWUm1UbXAzNSwgVkFWUm1UbXAzNikKIE1heFRtcDQgPSBM&#xD;&#xA;bXRkTWF4X0ZjdCg0MCwgMTAwLCBWQVZSbVRtcDM3LCBWQVZSbVRtcDM4LCBWQVZSbVRtcDM5&#xD;&#xA;LCBWQVZSbVRtcDQwLCBWQVZSbVRtcDQxLCBWQVZSbVRtcDQyLCBWQVZSbVRtcDQzLCBWQVZS&#xD;&#xA;bVRtcDQ0LCBWQVZSbVRtcDQ1LCBWQVZSbVRtcDQ2LCBWQVZSbVRtcDQ3LCBWQVZSbVRtcDQ4&#xD;&#xA;KQogTWF4VG1wNSA9IExtdGRNYXhfRmN0KDQwLCAxMDAsIFZBVlJtVG1wNDksIFZBVlJtVG1w&#xD;&#xA;NTApCiBNYXhUbXAgPSBBdmVyYWdlKE1heFRtcDEsIE1heFRtcDIsIE1heFRtcDMsIE1heFRt&#xD;&#xA;cDQsIE1heFRtcDUpCgogTWluVG1wMSA9IExtdGRNaW5fRmN0KDQwLCAxMDAsIFZBVlJtVG1w&#xD;&#xA;MSwgVkFWUm1UbXAyLCBWQVZSbVRtcDMsIFZBVlJtVG1wNCwgVkFWUm1UbXA1LCBWQVZSbVRt&#xD;&#xA;cDYsIFZBVlJtVG1wNywgVkFWUm1UbXA4LCBWQVZSbVRtcDksIFZBVlJtVG1wMTAsIFZBVlJt&#xD;&#xA;VG1wMTEpCiBNaW5UbXAyID0gTG10ZE1pbl9GY3QoNDAsIDEwMCwgVkFWUm1UbXAxMiwgVkFW&#xD;&#xA;Um1UbXAxMywgVkFWUm1UbXAxNCwgVkFWUm1UbXAxNSwgVkFWUm1UbXAxNiwgVkFWUm1UbXAx&#xD;&#xA;NywgVkFWUm1UbXAxOCwgVkFWUm1UbXAxOSwgVkFWUm1UbXAyMCwgVkFWUm1UbXAyMSwgVkFW&#xD;&#xA;Um1UbXAyMiwgVkFWUm1UbXAyMywgVkFWUm1UbXAyNCkKIE1pblRtcDMgPSBMbXRkTWluX0Zj&#xD;&#xA;dCg0MCwgMTAwLCBWQVZSbVRtcDI1LCBWQVZSbVRtcDI2LCBWQVZSbVRtcDI3LCBWQVZSbVRt&#xD;&#xA;cDI4LCBWQVZSbVRtcDI5LCBWQVZSbVRtcDMwLCBWQVZSbVRtcDMxLFZBVlJtVG1wMzIsIFZB&#xD;&#xA;VlJtVG1wMzMsIFZBVlJtVG1wMzQsIFZBVlJtVG1wMzUsIFZBVlJtVG1wMzYpCiBNaW5UbXA0&#xD;&#xA;ID0gTG10ZE1pbl9GY3QoNDAsIDEwMCwgVkFWUm1UbXAzNywgVkFWUm1UbXAzOCwgVkFWUm1U&#xD;&#xA;bXAzOSwgVkFWUm1UbXA0MCwgVkFWUm1UbXA0MSwgVkFWUm1UbXA0MiwgVkFWUm1UbXA0Mywg&#xD;&#xA;VkFWUm1UbXA0NCwgVkFWUm1UbXA0NSwgVkFWUm1UbXA0NiwgVkFWUm1UbXA0NywgVkFWUm1U&#xD;&#xA;bXA0OCkKIE1pblRtcDUgPSBMbXRkTWluX0ZjdCg0MCwgMTAwLCBWQVZSbVRtcDQ5LCBWQVZS&#xD;&#xA;bVRtcDUwKQogTWluVG1wID0gQXZlcmFnZShNaW5UbXAxLCBNaW5UbXAyLCBNaW5UbXAzLCBN&#xD;&#xA;aW5UbXA0LCBNaW5UbXA1KQoJCiBFOgogSWYgKFRTPjMwKSB0aGVuIGdvdG8gQ0FMQ1VMQVRF&#xD;&#xA;CgoKCgoKCgoKCgoKCg==&lt;/Code&gt;&#xA; &lt;ByteCode Version=&quot;1&quot;&gt;PjsgP6APP6EPP6IPP6MPP6QPP6UPP6YPP6cPP6gPP6kPP6oPP6sPP6wPP60PP64PP68PP7AP&#xD;&#xA;P7EP0j47ID+yDz+zDz+0Dz+1Dz+2Dz+3Dz+4Dz+5Dz+6Dz+7Dz+8Dz+9Dz++Dz+/Dz/ADz/B&#xD;&#xA;Dz/CDz/DD9I+OyA/xA8/xQ8/xg8/xw8/yA8/yQ8/yg8/yw8/zA8/zQ8/zg8/zw8/0A8/0Q/S&#xD;&#xA;PjshP9IPP9MPP9QP0j47PwAAPwEAPwIAPwMAPwQAPwUAPwYAPwcAPwgAPwkAPwoAPwsAPwwA&#xD;&#xA;Pw0APw4A0j4fP9UPP9YPP9cP0onxAAAA0qczP9UPQgAAIEJCAADIQj+gDz+hDz+iDz+jDz+k&#xD;&#xA;Dz+lDz+mDz+nDz+oDz+pDz+qD0k/AADSpzM/1Q9CAAAgQkIAAMhCP6sPP6wPP60PP64PP68P&#xD;&#xA;P7APP7EPP7IPP7MPP7QPP7UPP7YPP7cPST8BANKnMz/VD0IAACBCQgAAyEI/uA8/uQ8/ug8/&#xD;&#xA;uw8/vA8/vQ8/vg8/vw8/wA8/wQ8/wg8/ww9JPwIA0qczP9UPQgAAIEJCAADIQj/EDz/FDz/G&#xD;&#xA;Dz/HDz/IDz/JDz/KDz/LDz/MDz/NDz/ODz/PD0k/AwDSpzM/1Q9CAAAgQkIAAMhCP9APP9EP&#xD;&#xA;ST8EANKnSAU/AAA/AQA/AgA/AwA/BABJP9IP0qczP9YPQgAAIEJCAADIQj+gDz+hDz+iDz+j&#xD;&#xA;Dz+kDz+lDz+mDz+nDz+oDz+pDz+qD0k/BQDSpzM/1g9CAAAgQkIAAMhCP6sPP6wPP60PP64P&#xD;&#xA;P68PP7APP7EPP7IPP7MPP7QPP7UPP7YPP7cPST8GANKnMz/WD0IAACBCQgAAyEI/uA8/uQ8/&#xD;&#xA;ug8/uw8/vA8/vQ8/vg8/vw8/wA8/wQ8/wg8/ww9JPwcA0qczP9YPQgAAIEJCAADIQj/EDz/F&#xD;&#xA;Dz/GDz/HDz/IDz/JDz/KDz/LDz/MDz/NDz/ODz/PD0k/CADSpzM/1g9CAAAgQkIAAMhCP9AP&#xD;&#xA;P9EPST8JANKnSAU/BQA/BgA/BwA/CAA/CQBJP9MP0qczP9cPQgAAIEJCAADIQj+gDz+hDz+i&#xD;&#xA;Dz+jDz+kDz+lDz+mDz+nDz+oDz+pDz+qD0k/CgDSpzM/1w9CAAAgQkIAAMhCP6sPP6wPP60P&#xD;&#xA;P64PP68PP7APP7EPP7IPP7MPP7QPP7UPP7YPP7cPST8LANKnMz/XD0IAACBCQgAAyEI/uA8/&#xD;&#xA;uQ8/ug8/uw8/vA8/vQ8/vg8/vw8/wA8/wQ8/wg8/ww9JPwwA0qczP9cPQgAAIEJCAADIQj/E&#xD;&#xA;Dz/FDz/GDz/HDz/IDz/JDz/KDz/LDz/MDz/NDz/ODz/PD0k/DQDSpzM/1w9CAAAgQkIAAMhC&#xD;&#xA;P9APP9EPST8OANKnSAU/CgA/CwA/DAA/DQA/DgBJP9QP0okqBAAA0r0GAAAAUG43VFMAQgAA&#xD;&#xA;8EHC8QAAANLT&lt;/ByteCode&gt;&#xA; &lt;LocalVars Count=&quot;15&quot; Version=&quot;1&quot;&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;9&quot; Id=&quot;0&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;AvgTmp1&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;18&quot; Id=&quot;1&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;AvgTmp2&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;27&quot; Id=&quot;2&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;AvgTmp3&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;36&quot; Id=&quot;3&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;AvgTmp4&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;45&quot; Id=&quot;4&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;AvgTmp5&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;54&quot; Id=&quot;5&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MaxTmp1&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;63&quot; Id=&quot;6&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MaxTmp2&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;72&quot; Id=&quot;7&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MaxTmp3&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;81&quot; Id=&quot;8&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MaxTmp4&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;90&quot; Id=&quot;9&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MaxTmp5&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;99&quot; Id=&quot;10&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MinTmp1&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;108&quot; Id=&quot;11&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MinTmp2&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;117&quot; Id=&quot;12&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MinTmp3&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;126&quot; Id=&quot;13&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MinTmp4&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;LocalVar ArraySize=&quot;0&quot; ColumnNumber=&quot;135&quot; Id=&quot;14&quot; Length=&quot;4&quot; LineNumber=&quot;5&quot; Name=&quot;MinTmp5&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;59&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;/LocalVars&gt;&#xA; &lt;BindingVars Count=&quot;53&quot; Version=&quot;1&quot;&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;15&quot; ComlType=&quot;2&quot; Id=&quot;4000&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp1&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;26&quot; ComlType=&quot;2&quot; Id=&quot;4001&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp2&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;37&quot; ComlType=&quot;2&quot; Id=&quot;4002&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp3&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;48&quot; ComlType=&quot;2&quot; Id=&quot;4003&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp4&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;59&quot; ComlType=&quot;2&quot; Id=&quot;4004&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp5&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;70&quot; ComlType=&quot;2&quot; Id=&quot;4005&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp6&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;81&quot; ComlType=&quot;2&quot; Id=&quot;4006&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp7&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;92&quot; ComlType=&quot;2&quot; Id=&quot;4007&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp8&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;103&quot; ComlType=&quot;2&quot; Id=&quot;4008&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp9&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;114&quot; ComlType=&quot;2&quot; Id=&quot;4009&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp10&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;126&quot; ComlType=&quot;2&quot; Id=&quot;4010&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp11&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;138&quot; ComlType=&quot;2&quot; Id=&quot;4011&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp12&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;150&quot; ComlType=&quot;2&quot; Id=&quot;4012&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp13&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;162&quot; ComlType=&quot;2&quot; Id=&quot;4013&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp14&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;174&quot; ComlType=&quot;2&quot; Id=&quot;4014&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp15&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;186&quot; ComlType=&quot;2&quot; Id=&quot;4015&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp16&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;198&quot; ComlType=&quot;2&quot; Id=&quot;4016&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp17&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;210&quot; ComlType=&quot;2&quot; Id=&quot;4017&quot; Length=&quot;4&quot; LineNumber=&quot;1&quot; Name=&quot;VAVRmTmp18&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;15&quot; ComlType=&quot;2&quot; Id=&quot;4018&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp19&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;27&quot; ComlType=&quot;2&quot; Id=&quot;4019&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp20&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;39&quot; ComlType=&quot;2&quot; Id=&quot;4020&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp21&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;51&quot; ComlType=&quot;2&quot; Id=&quot;4021&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp22&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;63&quot; ComlType=&quot;2&quot; Id=&quot;4022&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp23&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;75&quot; ComlType=&quot;2&quot; Id=&quot;4023&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp24&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;87&quot; ComlType=&quot;2&quot; Id=&quot;4024&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp25&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;99&quot; ComlType=&quot;2&quot; Id=&quot;4025&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp26&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;111&quot; ComlType=&quot;2&quot; Id=&quot;4026&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp27&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;123&quot; ComlType=&quot;2&quot; Id=&quot;4027&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp28&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;135&quot; ComlType=&quot;2&quot; Id=&quot;4028&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp29&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;147&quot; ComlType=&quot;2&quot; Id=&quot;4029&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp30&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;159&quot; ComlType=&quot;2&quot; Id=&quot;4030&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp31&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;171&quot; ComlType=&quot;2&quot; Id=&quot;4031&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp32&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;183&quot; ComlType=&quot;2&quot; Id=&quot;4032&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp33&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;195&quot; ComlType=&quot;2&quot; Id=&quot;4033&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp34&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;207&quot; ComlType=&quot;2&quot; Id=&quot;4034&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp35&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;219&quot; ComlType=&quot;2&quot; Id=&quot;4035&quot; Length=&quot;4&quot; LineNumber=&quot;2&quot; Name=&quot;VAVRmTmp36&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;15&quot; ComlType=&quot;2&quot; Id=&quot;4036&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp37&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;27&quot; ComlType=&quot;2&quot; Id=&quot;4037&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp38&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;39&quot; ComlType=&quot;2&quot; Id=&quot;4038&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp39&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;51&quot; ComlType=&quot;2&quot; Id=&quot;4039&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp40&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;63&quot; ComlType=&quot;2&quot; Id=&quot;4040&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp41&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;75&quot; ComlType=&quot;2&quot; Id=&quot;4041&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp42&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;87&quot; ComlType=&quot;2&quot; Id=&quot;4042&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp43&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;99&quot; ComlType=&quot;2&quot; Id=&quot;4043&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp44&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;111&quot; ComlType=&quot;2&quot; Id=&quot;4044&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp45&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;123&quot; ComlType=&quot;2&quot; Id=&quot;4045&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp46&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;135&quot; ComlType=&quot;2&quot; Id=&quot;4046&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp47&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;147&quot; ComlType=&quot;2&quot; Id=&quot;4047&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp48&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;159&quot; ComlType=&quot;2&quot; Id=&quot;4048&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp49&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;171&quot; ComlType=&quot;2&quot; Id=&quot;4049&quot; Length=&quot;4&quot; LineNumber=&quot;3&quot; Name=&quot;VAVRmTmp50&quot; StringLength=&quot;4&quot; SubType=&quot;32&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;16&quot; ComlType=&quot;2&quot; Id=&quot;4050&quot; Length=&quot;4&quot; LineNumber=&quot;4&quot; Name=&quot;AvgTmp&quot; StringLength=&quot;4&quot; SubType=&quot;33&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;24&quot; ComlType=&quot;2&quot; Id=&quot;4051&quot; Length=&quot;4&quot; LineNumber=&quot;4&quot; Name=&quot;MaxTmp&quot; StringLength=&quot;4&quot; SubType=&quot;33&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA;  &lt;BindingVar ArraySize=&quot;0&quot; ColumnNumber=&quot;32&quot; ComlType=&quot;2&quot; Id=&quot;4052&quot; Length=&quot;4&quot; LineNumber=&quot;4&quot; Name=&quot;MinTmp&quot; StringLength=&quot;4&quot; SubType=&quot;33&quot; Type=&quot;59&quot; Unit=&quot;65537&quot; UnitPrefix=&quot;0&quot; Version=&quot;2&quot;&gt;&#xA;   &lt;InitialValue Version=&quot;1&quot;&gt;0&lt;/InitialValue&gt;&#xA;  &lt;/BindingVar&gt;&#xA; &lt;/BindingVars&gt;&#xA; &lt;PublicVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;FunctionVars Count=&quot;3&quot; Version=&quot;1&quot;&gt;&#xA;  &lt;FunctionVar ArraySize=&quot;0&quot; ColumnNumber=&quot;10&quot; Id=&quot;4053&quot; Length=&quot;4&quot; LineNumber=&quot;6&quot; Name=&quot;LmtdAvg_Fct&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;31&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;FunctionVar ArraySize=&quot;0&quot; ColumnNumber=&quot;23&quot; Id=&quot;4054&quot; Length=&quot;4&quot; LineNumber=&quot;6&quot; Name=&quot;LmtdMax_Fct&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;31&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;FunctionVar ArraySize=&quot;0&quot; ColumnNumber=&quot;36&quot; Id=&quot;4055&quot; Length=&quot;4&quot; LineNumber=&quot;6&quot; Name=&quot;LmtdMin_Fct&quot; StringLength=&quot;4&quot; SubType=&quot;0&quot; Type=&quot;31&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;/FunctionVars&gt;&#xA; &lt;XmlNodeVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;ObjectVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;Labels Count=&quot;2&quot; Version=&quot;1&quot;&gt;&#xA;  &lt;Label ColumnNumber=&quot;1&quot; Id=&quot;1&quot; LineNumber=&quot;8&quot; Name=&quot;CALCULATE&quot; Offset=&quot;F1&quot; Status=&quot;3&quot; Type=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA;  &lt;Label ColumnNumber=&quot;2&quot; Id=&quot;2&quot; LineNumber=&quot;30&quot; Name=&quot;E&quot; Offset=&quot;42A&quot; Status=&quot;1&quot; Type=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;/Labels&gt;&#xA; &lt;WebServiceVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;BufferedVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;DataFileVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA; &lt;TrendLogVars Count=&quot;0&quot; Version=&quot;1&quot;/&gt;&#xA;&lt;/PEObject&gt;&#xA;"/>
+          </Parameter>
+        </PropertyGroup>
+      </PropertyTab>
+      <PropertyTab Name = "InVarTab">
+        <PropertyGroup Name = "InVarGroup">
+          <Variable Name                  = "VAVRmTmp1"
+                    DisplayName           = "VAVRmTmp1"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp2"
+                    DisplayName           = "VAVRmTmp2"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp3"
+                    DisplayName           = "VAVRmTmp3"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp4"
+                    DisplayName           = "VAVRmTmp4"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp5"
+                    DisplayName           = "VAVRmTmp5"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp6"
+                    DisplayName           = "VAVRmTmp6"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp7"
+                    DisplayName           = "VAVRmTmp7"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp8"
+                    DisplayName           = "VAVRmTmp8"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp9"
+                    DisplayName           = "VAVRmTmp9"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp10"
+                    DisplayName           = "VAVRmTmp10"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp11"
+                    DisplayName           = "VAVRmTmp11"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp12"
+                    DisplayName           = "VAVRmTmp12"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp13"
+                    DisplayName           = "VAVRmTmp13"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp14"
+                    DisplayName           = "VAVRmTmp14"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp15"
+                    DisplayName           = "VAVRmTmp15"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp16"
+                    DisplayName           = "VAVRmTmp16"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp17"
+                    DisplayName           = "VAVRmTmp17"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp18"
+                    DisplayName           = "VAVRmTmp18"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp19"
+                    DisplayName           = "VAVRmTmp19"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp20"
+                    DisplayName           = "VAVRmTmp20"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp21"
+                    DisplayName           = "VAVRmTmp21"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp22"
+                    DisplayName           = "VAVRmTmp22"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp23"
+                    DisplayName           = "VAVRmTmp23"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp24"
+                    DisplayName           = "VAVRmTmp24"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp25"
+                    DisplayName           = "VAVRmTmp25"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp26"
+                    DisplayName           = "VAVRmTmp26"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp27"
+                    DisplayName           = "VAVRmTmp27"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp28"
+                    DisplayName           = "VAVRmTmp28"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp29"
+                    DisplayName           = "VAVRmTmp29"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp30"
+                    DisplayName           = "VAVRmTmp30"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp31"
+                    DisplayName           = "VAVRmTmp31"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp32"
+                    DisplayName           = "VAVRmTmp32"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp33"
+                    DisplayName           = "VAVRmTmp33"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp34"
+                    DisplayName           = "VAVRmTmp34"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp35"
+                    DisplayName           = "VAVRmTmp35"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp36"
+                    DisplayName           = "VAVRmTmp36"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp37"
+                    DisplayName           = "VAVRmTmp37"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp38"
+                    DisplayName           = "VAVRmTmp38"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp39"
+                    DisplayName           = "VAVRmTmp39"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp40"
+                    DisplayName           = "VAVRmTmp40"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp41"
+                    DisplayName           = "VAVRmTmp41"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp42"
+                    DisplayName           = "VAVRmTmp42"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp43"
+                    DisplayName           = "VAVRmTmp43"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp44"
+                    DisplayName           = "VAVRmTmp44"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp45"
+                    DisplayName           = "VAVRmTmp45"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp46"
+                    DisplayName           = "VAVRmTmp46"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp47"
+                    DisplayName           = "VAVRmTmp47"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp48"
+                    DisplayName           = "VAVRmTmp48"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp49"
+                    DisplayName           = "VAVRmTmp49"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "VAVRmTmp50"
+                    DisplayName           = "VAVRmTmp50"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "Application"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Sys"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "0"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+        </PropertyGroup>
+      </PropertyTab>
+      <PropertyTab Name = "OutVarTab">
+        <PropertyGroup Name = "OutVarGroup">
+          <Variable Name                  = "AvgTmp"
+                    DisplayName           = "AvgTmp"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "No"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Srv"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "1"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "MaxTmp"
+                    DisplayName           = "MaxTmp"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "No"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Srv"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "1"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+          <Variable Name                  = "MinTmp"
+                    DisplayName           = "MinTmp"
+                    Description           = ""
+                    Visibility            = "Normal"
+                    Optional              = "0"
+                    VariableReference     = "No"
+                    ReadOnly              = "0"
+                    Static                = "0"
+                    Scope                 = "Srv"
+                    Copy                  = "1"
+                    Nullable              = "1"
+                    ObjectFilter          = ""
+                    >
+              <Type Configurable = "No" Value = "system.pt.Float"/>
+              <Unit Configurable = "No" Value = "0x10001"/>
+              <InitReference/>
+              <Runtime Nullable = "1">
+                <ReadOnly    Configurable = "No" Value = "1"/>
+                <RetainLevel Configurable = "No" Value = "No"/>
+                <Forceable   Configurable = "No" Value = "1"/>
+                <InitValue Null="1"/>
+              </Runtime>
+          </Variable>
+        </PropertyGroup>
+      </PropertyTab>
+      <PropertyTab Name = "PublicVarTab">
+        <PropertyGroup Name = "PublicVarGroup">
+        </PropertyGroup>
+      </PropertyTab>
+      <PropertyTab Name = "FunctionTab">
+        <PropertyGroup Name = "FunctionGroup">
+          <ObjectReference Name                  = "LmtdAvg_Fct"
+                           DisplayName           = "LmtdAvg_Fct"
+                           Description           = "LmtdAvg_Fct"
+                           Visibility            = "Normal"
+                           Optional              = "0"
+                           ReadOnly              = "0"
+                           Static                = "0"
+                           RTWriteable           = "0"
+                           Scope                 = "Srv"
+                           Copy                  = "1"
+                           Nullable              = "1"
+                           >
+              <Type Configurable = "No" Value = "script.Function"/>
+              <InitReference/>
+          </ObjectReference>
+          <ObjectReference Name                  = "LmtdMax_Fct"
+                           DisplayName           = "LmtdMax_Fct"
+                           Description           = "LmtdMax_Fct"
+                           Visibility            = "Normal"
+                           Optional              = "0"
+                           ReadOnly              = "0"
+                           Static                = "0"
+                           RTWriteable           = "0"
+                           Scope                 = "Srv"
+                           Copy                  = "1"
+                           Nullable              = "1"
+                           >
+              <Type Configurable = "No" Value = "script.Function"/>
+              <InitReference/>
+          </ObjectReference>
+          <ObjectReference Name                  = "LmtdMin_Fct"
+                           DisplayName           = "LmtdMin_Fct"
+                           Description           = "LmtdMin_Fct"
+                           Visibility            = "Normal"
+                           Optional              = "0"
+                           ReadOnly              = "0"
+                           Static                = "0"
+                           RTWriteable           = "0"
+                           Scope                 = "Srv"
+                           Copy                  = "1"
+                           Nullable              = "1"
+                           >
+              <Type Configurable = "No" Value = "script.Function"/>
+              <InitReference/>
+          </ObjectReference>
+        </PropertyGroup>
+      </PropertyTab>
+
+
+    </ObjectType>
+
+  </Types>
+<ExportedObjects>
+  <OI DESCR="VAV Average Temperature Program" NAME="pVAVTmpAWing" TYPE="udt.zd62lcyc35euhoohzdwu3g4ubu.sezzvhaqz3jarqry26ljr2orltxyjzxq">
+    <PI Name="VAVRmTmp1">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB1129/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp2">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB1116/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp3">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB1106/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp4">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB1118/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp5">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB2117/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp6">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB2124/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp7">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB2106/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp8">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB3117/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp9">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB3107/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp10">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB3129/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+    <PI Name="VAVRmTmp11">
+      <Reference DeltaFilter="0" Object="../../MPV/VAVB3120/Application/Values/RmTmp" Property="Value" Retransmit="0" TransferRate="10"/>
+    </PI>
+
+  </OI>
+</ExportedObjects>
+
+</ObjectSet>

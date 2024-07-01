@@ -1,0 +1,536 @@
+'Data Management Program
+'Last Edit Date: March 29, 2024
+
+'Counts the number of requests from VAVs for Static Pressure Reset requests.
+'Calculates Total Airflow and Temperature Max/Average/Min.
+
+Numeric Input VAV_D1_101_StPrRstReq, VAV_D1_101_RmTmp, VAV_D1_101_RhtVlvPos
+Numeric Input VAV_D1_102_StPrRstReq, VAV_D1_102_RmTmp, VAV_D1_102_RhtVlvPos
+Numeric Input VAV_D1_104_StPrRstReq, VAV_D1_104_RmTmp, VAV_D1_104_RhtVlvPos
+Numeric Input VAV_D1_105_StPrRstReq, VAV_D1_105_RmTmp, VAV_D1_105_RhtVlvPos
+Numeric Input VAV_D1_107_StPrRstReq, VAV_D1_107_RmTmp, VAV_D1_107_RhtVlvPos
+Numeric Input VAV_D1_108_StPrRstReq, VAV_D1_108_RmTmp, VAV_D1_108_RhtVlvPos
+Numeric Input VAV_D1_109_StPrRstReq, VAV_D1_109_RmTmp, VAV_D1_109_RhtVlvPos
+Numeric Input VAV_D1_110_StPrRstReq, VAV_D1_110_RmTmp, VAV_D1_110_RhtVlvPos
+Numeric Input VAV_D1_111_StPrRstReq, VAV_D1_111_RmTmp, VAV_D1_111_RhtVlvPos
+Numeric Input VAV_D1_112_StPrRstReq, VAV_D1_112_RmTmp, VAV_D1_112_RhtVlvPos
+Numeric Input VAV_D1_113_StPrRstReq, VAV_D1_113_RmTmp, VAV_D1_113_RhtVlvPos
+Numeric Input VAV_D1_118_StPrRstReq, VAV_D1_118_RmTmp, VAV_D1_118_RhtVlvPos
+Numeric Input VAV_D1_142_StPrRstReq, VAV_D1_142_RmTmp, VAV_D1_142_RhtVlvPos
+Numeric Input VAV_D1_S_318_R_318_StPrRstReq, VAV_D1_S_318_R_318_RmTmp, VAV_D1_S_318_R_318_RhtVlvPos
+Numeric Input VAV_D1_S_319_E_319_StPrRstReq, VAV_D1_S_319_E_319_RmTmp, VAV_D1_S_319_E_319_RhtVlvPos
+Numeric Input VAV_D1_320_StPrRstReq, VAV_D1_320_RmTmp, VAV_D1_320_RhtVlvPos
+Numeric Input VAV_D1_332_StPrRstReq, VAV_D1_332_RmTmp, VAV_D1_332_RhtVlvPos
+Numeric Input VAV_D1_333_StPrRstReq, VAV_D1_333_RmTmp, VAV_D1_333_RhtVlvPos
+Numeric Input VAV_D1_401_StPrRstReq, VAV_D1_401_RmTmp, VAV_D1_401_RhtVlvPos
+Numeric Input VAV_D1_E_325_StPrRstReq, VAV_D1_E_325_RmTmp, VAV_D1_E_325_RhtVlvPos
+Numeric Input VAV_D1_402_StPrRstReq, VAV_D1_402_RmTmp, VAV_D1_402_RhtVlvPos
+Numeric Input VAV_D1_403_StPrRstReq, VAV_D1_403_RmTmp, VAV_D1_403_RhtVlvPos
+Numeric Input VAV_D1_404_StPrRstReq, VAV_D1_404_RmTmp, VAV_D1_404_RhtVlvPos
+Numeric Input VAV_D1_405_StPrRstReq, VAV_D1_405_RmTmp, VAV_D1_405_RhtVlvPos
+Numeric Input VAV_D1_406_StPrRstReq, VAV_D1_406_RmTmp, VAV_D1_406_RhtVlvPos
+Numeric Input VAV_D1_407_StPrRstReq, VAV_D1_407_RmTmp, VAV_D1_407_RhtVlvPos
+Numeric Input VAV_D1_408_StPrRstReq, VAV_D1_408_RmTmp, VAV_D1_408_RhtVlvPos
+Numeric Input VAV_D1_409_StPrRstReq, VAV_D1_409_RmTmp, VAV_D1_409_RhtVlvPos
+Numeric Input VAV_D1_410_StPrRstReq, VAV_D1_410_RmTmp, VAV_D1_410_RhtVlvPos
+Numeric Input VAV_D1_411_StPrRstReq, VAV_D1_411_RmTmp, VAV_D1_411_RhtVlvPos
+Numeric Input VAV_D1_S_412_E_412_StPrRstReq, VAV_D1_S_412_E_412_RmTmp, VAV_D1_S_412_E_412_RhtVlvPos
+Numeric Input VAV_D1_413_StPrRstReq, VAV_D1_413_RmTmp, VAV_D1_413_RhtVlvPos
+Numeric Input VAV_D1_S_414_E_414_StPrRstReq, VAV_D1_S_414_E_414_RmTmp, VAV_D1_S_414_E_414_RhtVlvPos
+Numeric Input VAV_D1_S_415_E_415_StPrRstReq, VAV_D1_S_415_E_415_RmTmp, VAV_D1_S_415_E_415_RhtVlvPos
+Numeric Input VAV_D1_S_416_E_416_StPrRstReq, VAV_D1_S_416_E_416_RmTmp, VAV_D1_S_416_E_416_RhtVlvPos
+Numeric Input VAV_D1_S_417_E_417_StPrRstReq, VAV_D1_S_417_E_417_RmTmp, VAV_D1_S_417_E_417_RhtVlvPos
+Numeric Input VAV_D1_S_418_E_418_StPrRstReq, VAV_D1_S_418_E_418_RmTmp, VAV_D1_S_418_E_418_RhtVlvPos
+Numeric Input VAV_D1_S_419_E_419_StPrRstReq, VAV_D1_S_419_E_419_RmTmp, VAV_D1_S_419_E_419_RhtVlvPos
+Numeric Input VAV_D1_420_StPrRstReq, VAV_D1_420_RmTmp, VAV_D1_420_RhtVlvPos
+Numeric Input VAV_D1_421_StPrRstReq, VAV_D1_421_RmTmp, VAV_D1_421_RhtVlvPos
+Numeric Input VAV_D1_422_StPrRstReq, VAV_D1_422_RmTmp, VAV_D1_422_RhtVlvPos
+Numeric Input VAV_D1_423_StPrRstReq, VAV_D1_423_RmTmp, VAV_D1_423_RhtVlvPos
+Numeric Input VAV_D1_424_StPrRstReq, VAV_D1_424_RmTmp, VAV_D1_424_RhtVlvPos
+Numeric Input VAV_D1_425_StPrRstReq, VAV_D1_425_RmTmp, VAV_D1_425_RhtVlvPos
+Numeric Input VAV_D1_427_StPrRstReq, VAV_D1_427_RmTmp, VAV_D1_427_RhtVlvPos
+Numeric Input VAV_D1_428_StPrRstReq, VAV_D1_428_RmTmp, VAV_D1_428_RhtVlvPos
+Numeric Input VAV_D1_429_StPrRstReq, VAV_D1_429_RmTmp, VAV_D1_429_RhtVlvPos
+Numeric Input VAV_D1_430_StPrRstReq, VAV_D1_430_RmTmp, VAV_D1_430_RhtVlvPos
+Numeric Input VAV_D1_431_StPrRstReq, VAV_D1_431_RmTmp, VAV_D1_431_RhtVlvPos
+Numeric Input VAV_D1_432_StPrRstReq, VAV_D1_432_RmTmp, VAV_D1_432_RhtVlvPos
+Numeric Input VAV_D1_433_StPrRstReq, VAV_D1_433_RmTmp, VAV_D1_433_RhtVlvPos
+Numeric Input VAV_D1_S_434_E_434_StPrRstReq, VAV_D1_S_434_E_434_RmTmp, VAV_D1_S_434_E_434_RhtVlvPos
+Numeric Input VAV_D1_435_StPrRstReq, VAV_D1_435_RmTmp, VAV_D1_435_RhtVlvPos
+Numeric Input VAV_D1_436_StPrRstReq, VAV_D1_436_RmTmp, VAV_D1_436_RhtVlvPos
+Numeric Input VAV_D1_437_StPrRstReq, VAV_D1_437_RmTmp, VAV_D1_437_RhtVlvPos
+Numeric Input VAV_D1_438_StPrRstReq, VAV_D1_438_RmTmp, VAV_D1_438_RhtVlvPos
+Numeric Input VAV_D1_439_StPrRstReq, VAV_D1_439_RmTmp, VAV_D1_439_RhtVlvPos
+Numeric Input VAV_D1_440_StPrRstReq, VAV_D1_440_RmTmp, VAV_D1_440_RhtVlvPos
+Numeric Input VAV_D1_441_StPrRstReq, VAV_D1_441_RmTmp, VAV_D1_441_RhtVlvPos
+Numeric Input VAV_D1_442_StPrRstReq, VAV_D1_442_RmTmp, VAV_D1_442_RhtVlvPos
+Numeric Input VAV_D1_443_StPrRstReq, VAV_D1_443_RmTmp, VAV_D1_443_RhtVlvPos
+Numeric Input VAV_D1_444_StPrRstReq, VAV_D1_444_RmTmp, VAV_D1_444_RhtVlvPos
+Numeric Input VAV_D1_445_StPrRstReq, VAV_D1_445_RmTmp, VAV_D1_445_RhtVlvPos
+Numeric Input VAV_D1_446_StPrRstReq, VAV_D1_446_RmTmp, VAV_D1_446_RhtVlvPos
+Numeric Input VAV_D1_447_StPrRstReq, VAV_D1_447_RmTmp, VAV_D1_447_RhtVlvPos
+Numeric Input VAV_D1_448_StPrRstReq, VAV_D1_448_RmTmp, VAV_D1_448_RhtVlvPos
+Numeric Input VAV_D1_449_StPrRstReq, VAV_D1_449_RmTmp, VAV_D1_449_RhtVlvPos
+Numeric Input VAV_D1_450_StPrRstReq, VAV_D1_450_RmTmp, VAV_D1_450_RhtVlvPos
+Numeric Input VAV_D1_451_StPrRstReq, VAV_D1_451_RmTmp, VAV_D1_451_RhtVlvPos
+Numeric Input VAV_D1_452_StPrRstReq, VAV_D1_452_RmTmp, VAV_D1_452_RhtVlvPos
+Numeric Input VAV_D1_453_StPrRstReq, VAV_D1_453_RmTmp, VAV_D1_453_RhtVlvPos
+Numeric Input VAV_D1_454_StPrRstReq, VAV_D1_454_RmTmp, VAV_D1_454_RhtVlvPos
+Numeric Input VAV_D1_S_455_E_455_StPrRstReq, VAV_D1_S_455_E_455_RmTmp, VAV_D1_S_455_E_455_RhtVlvPos
+Numeric Input VAV_D1_456_StPrRstReq, VAV_D1_456_RmTmp, VAV_D1_456_RhtVlvPos
+Numeric Input VAV_D1_457_StPrRstReq, VAV_D1_457_RmTmp, VAV_D1_457_RhtVlvPos
+Numeric Input VAV_D1_458_StPrRstReq, VAV_D1_458_RmTmp, VAV_D1_458_RhtVlvPos
+Numeric Input VAV_D1_459_StPrRstReq, VAV_D1_459_RmTmp, VAV_D1_459_RhtVlvPos
+Numeric Input VAV_D1_460_StPrRstReq, VAV_D1_460_RmTmp, VAV_D1_460_RhtVlvPos
+Numeric Input VAV_D1_461_StPrRstReq, VAV_D1_461_RmTmp, VAV_D1_461_RhtVlvPos
+Numeric Input VAV_D1_462_StPrRstReq, VAV_D1_462_RmTmp, VAV_D1_462_RhtVlvPos
+Numeric Input VAV_D1_463_StPrRstReq, VAV_D1_463_RmTmp, VAV_D1_463_RhtVlvPos
+Numeric Input VAV_D1_464_StPrRstReq, VAV_D1_464_RmTmp, VAV_D1_464_RhtVlvPos
+Numeric Input VAV_D1_465_StPrRstReq, VAV_D1_465_RmTmp, VAV_D1_465_RhtVlvPos
+Numeric Input VAV_D1_466_StPrRstReq, VAV_D1_466_RmTmp, VAV_D1_466_RhtVlvPos
+Numeric Input VAV_D1_S_467_E_467_StPrRstReq, VAV_D1_S_467_E_467_RmTmp, VAV_D1_S_467_E_467_RhtVlvPos
+Numeric Input VAV_D1_468_StPrRstReq, VAV_D1_468_RmTmp, VAV_D1_468_RhtVlvPos
+Numeric Input VAV_D1_469_StPrRstReq, VAV_D1_469_RmTmp, VAV_D1_469_RhtVlvPos
+Numeric Input VAV_D1_470_StPrRstReq, VAV_D1_470_RmTmp, VAV_D1_470_RhtVlvPos
+Numeric Input VAV_D1_S_471_R_471_StPrRstReq, VAV_D1_S_471_R_471_RmTmp, VAV_D1_S_471_R_471_RhtVlvPos
+Numeric Input vi_VavOpnRhtVlvPos, vi_VavOpnRhtVlvPct
+
+Numeric Output vo_VavSaStPrSptRstReq
+Numeric Output vo_VavRmTmpHi, vo_VavRmTmpLo, vo_VavRmTmpAvg
+Numeric Output vo_VavSaTmpSptRstReq
+String Output Vav01Label, Vav02Label, Vav03Label, Vav04Label, Vav05Label
+
+Numeric Req0Cnt, Req1Cnt, Req2Cnt, Req3Cnt, i, AvgSum, AvgDiv, TempHi, TempLo, RhtCnt
+Numeric Arr1[89], Arr2[90]
+String Arr3[90]
+
+STPRRESET:
+'(*)Static Pressure Reset Requests
+'(1)If the measured air flow is less than 50% of setpoint while setpoint is greater than zero and the damper position is greater than 95% for 1 minute, send 3 requests.
+'(2)Else if the measured air flow is less than 70% of setpoint while setpoint is greater than zero and the damper position is greater than 95% for 1 minute, send 2 requests.
+'(3)Else if the damper position is greater than 95%, send 1 request until the damper position is less than 85%.
+'(4)Else if the damper position is less than 95%, send 0 requests.
+
+	Arr1[1] = VAV_D1_101_StPrRstReq
+	Arr1[2] = VAV_D1_102_StPrRstReq
+	Arr1[3] = VAV_D1_104_StPrRstReq
+	Arr1[4] = VAV_D1_105_StPrRstReq
+	Arr1[5] = VAV_D1_107_StPrRstReq
+	Arr1[6] = VAV_D1_108_StPrRstReq
+	Arr1[7] = VAV_D1_109_StPrRstReq
+	Arr1[8] = VAV_D1_110_StPrRstReq
+	Arr1[9] = VAV_D1_111_StPrRstReq
+	Arr1[10] = VAV_D1_112_StPrRstReq
+	Arr1[11] = VAV_D1_113_StPrRstReq
+	Arr1[12] = VAV_D1_118_StPrRstReq
+	Arr1[13] = VAV_D1_142_StPrRstReq
+	Arr1[14] = VAV_D1_S_318_R_318_StPrRstReq
+	Arr1[15] = VAV_D1_S_319_E_319_StPrRstReq
+	Arr1[16] = VAV_D1_320_StPrRstReq
+	Arr1[17] = VAV_D1_332_StPrRstReq
+	Arr1[18] = VAV_D1_333_StPrRstReq
+	Arr1[19] = VAV_D1_401_StPrRstReq
+	Arr1[20] = VAV_D1_E_325_StPrRstReq
+	Arr1[21] = VAV_D1_402_StPrRstReq
+	Arr1[22] = VAV_D1_403_StPrRstReq
+	Arr1[23] = VAV_D1_404_StPrRstReq
+	Arr1[24] = VAV_D1_405_StPrRstReq
+	Arr1[25] = VAV_D1_406_StPrRstReq
+	Arr1[26] = VAV_D1_407_StPrRstReq
+	Arr1[27] = VAV_D1_408_StPrRstReq
+	Arr1[28] = VAV_D1_409_StPrRstReq
+	Arr1[29] = VAV_D1_410_StPrRstReq
+	Arr1[30] = VAV_D1_411_StPrRstReq
+	Arr1[31] = VAV_D1_S_412_E_412_StPrRstReq
+	Arr1[32] = VAV_D1_413_StPrRstReq
+	Arr1[33] = VAV_D1_S_414_E_414_StPrRstReq
+	Arr1[34] = VAV_D1_S_415_E_415_StPrRstReq
+	Arr1[35] = VAV_D1_S_416_E_416_StPrRstReq
+	Arr1[36] = VAV_D1_S_417_E_417_StPrRstReq
+	Arr1[37] = VAV_D1_S_418_E_418_StPrRstReq
+	Arr1[38] = VAV_D1_S_419_E_419_StPrRstReq
+	Arr1[39] = VAV_D1_420_StPrRstReq
+	Arr1[40] = VAV_D1_421_StPrRstReq
+	Arr1[41] = VAV_D1_422_StPrRstReq
+	Arr1[42] = VAV_D1_423_StPrRstReq
+	Arr1[43] = VAV_D1_424_StPrRstReq
+	Arr1[44] = VAV_D1_425_StPrRstReq
+	Arr1[45] = VAV_D1_427_StPrRstReq
+	Arr1[46] = VAV_D1_428_StPrRstReq
+	Arr1[47] = VAV_D1_429_StPrRstReq
+	Arr1[48] = VAV_D1_430_StPrRstReq
+	Arr1[49] = VAV_D1_431_StPrRstReq
+	Arr1[50] = VAV_D1_432_StPrRstReq
+	Arr1[51] = VAV_D1_433_StPrRstReq
+	Arr1[52] = VAV_D1_S_434_E_434_StPrRstReq
+	Arr1[53] = VAV_D1_435_StPrRstReq
+	Arr1[54] = VAV_D1_436_StPrRstReq
+	Arr1[55] = VAV_D1_437_StPrRstReq
+	Arr1[56] = VAV_D1_438_StPrRstReq
+	Arr1[57] = VAV_D1_439_StPrRstReq
+	Arr1[58] = VAV_D1_440_StPrRstReq
+	Arr1[59] = VAV_D1_441_StPrRstReq
+	Arr1[60] = VAV_D1_442_StPrRstReq
+	Arr1[61] = VAV_D1_443_StPrRstReq
+	Arr1[62] = VAV_D1_444_StPrRstReq
+	Arr1[63] = VAV_D1_445_StPrRstReq
+	Arr1[64] = VAV_D1_446_StPrRstReq
+	Arr1[65] = VAV_D1_447_StPrRstReq
+	Arr1[66] = VAV_D1_448_StPrRstReq
+	Arr1[67] = VAV_D1_449_StPrRstReq
+	Arr1[68] = VAV_D1_450_StPrRstReq
+	Arr1[69] = VAV_D1_451_StPrRstReq
+	Arr1[70] = VAV_D1_452_StPrRstReq
+	Arr1[71] = VAV_D1_453_StPrRstReq
+	Arr1[72] = VAV_D1_454_StPrRstReq
+	Arr1[73] = VAV_D1_S_455_E_455_StPrRstReq
+	Arr1[74] = VAV_D1_456_StPrRstReq
+	Arr1[75] = VAV_D1_457_StPrRstReq
+	Arr1[76] = VAV_D1_458_StPrRstReq
+	Arr1[77] = VAV_D1_459_StPrRstReq
+	Arr1[78] = VAV_D1_460_StPrRstReq
+	Arr1[79] = VAV_D1_461_StPrRstReq
+	Arr1[80] = VAV_D1_462_StPrRstReq
+	Arr1[81] = VAV_D1_463_StPrRstReq
+	Arr1[82] = VAV_D1_464_StPrRstReq
+	Arr1[83] = VAV_D1_465_StPrRstReq
+	Arr1[84] = VAV_D1_466_StPrRstReq
+	Arr1[85] = VAV_D1_S_467_E_467_StPrRstReq
+	Arr1[86] = VAV_D1_468_StPrRstReq
+	Arr1[87] = VAV_D1_469_StPrRstReq
+	Arr1[88] = VAV_D1_470_StPrRstReq
+	Arr1[89] = VAV_D1_S_471_R_471_StPrRstReq
+	SetArraySize(Arr2, GetArraySize(Arr3))
+	Arr3[1] = "VAV_D1_101"
+	Arr3[2] = "VAV_D1_102"
+	Arr3[3] = "VAV_D1_104"
+	Arr3[4] = "VAV_D1_105"
+	Arr3[5] = "VAV_D1_107"
+	Arr3[6] = "VAV_D1_108"
+	Arr3[7] = "VAV_D1_109"
+	Arr3[8] = "VAV_D1_110"
+	Arr3[9] = "VAV_D1_111"
+	Arr3[10] = "VAV_D1_112"
+	Arr3[11] = "VAV_D1_113"
+	Arr3[12] = "VAV_D1_118"
+	Arr3[13] = "VAV_D1_142"
+	Arr3[14] = "VAV_D1_S_318_R_318"
+	Arr3[15] = "VAV_D1_S_319_E_319"
+	Arr3[16] = "VAV_D1_320"
+	Arr3[17] = "VAV_D1_332"
+	Arr3[18] = "VAV_D1_333"
+	Arr3[19] = "VAV_D1_401"
+	Arr3[20] = "VAV_D1_E_325"
+	Arr3[21] = "VAV_D1_402"
+	Arr3[22] = "VAV_D1_403"
+	Arr3[23] = "VAV_D1_404"
+	Arr3[24] = "VAV_D1_405"
+	Arr3[25] = "VAV_D1_406"
+	Arr3[26] = "VAV_D1_407"
+	Arr3[27] = "VAV_D1_408"
+	Arr3[28] = "VAV_D1_409"
+	Arr3[29] = "VAV_D1_410"
+	Arr3[30] = "VAV_D1_411"
+	Arr3[31] = "VAV_D1_S_412_E_412"
+	Arr3[32] = "VAV_D1_413"
+	Arr3[33] = "VAV_D1_S_414_E_414"
+	Arr3[34] = "VAV_D1_S_415_E_415"
+	Arr3[35] = "VAV_D1_S_416_E_416"
+	Arr3[36] = "VAV_D1_S_417_E_417"
+	Arr3[37] = "VAV_D1_S_418_E_418"
+	Arr3[38] = "VAV_D1_S_419_E_419"
+	Arr3[39] = "VAV_D1_420"
+	Arr3[40] = "VAV_D1_421"
+	Arr3[41] = "VAV_D1_422"
+	Arr3[42] = "VAV_D1_423"
+	Arr3[43] = "VAV_D1_424"
+	Arr3[44] = "VAV_D1_425"
+	Arr3[45] = "VAV_D1_427"
+	Arr3[46] = "VAV_D1_428"
+	Arr3[47] = "VAV_D1_429"
+	Arr3[48] = "VAV_D1_430"
+	Arr3[49] = "VAV_D1_431"
+	Arr3[50] = "VAV_D1_432"
+	Arr3[51] = "VAV_D1_433"
+	Arr3[52] = "VAV_D1_S_434_E_434"
+	Arr3[53] = "VAV_D1_435"
+	Arr3[54] = "VAV_D1_436"
+	Arr3[55] = "VAV_D1_437"
+	Arr3[56] = "VAV_D1_438"
+	Arr3[57] = "VAV_D1_439"
+	Arr3[58] = "VAV_D1_440"
+	Arr3[59] = "VAV_D1_441"
+	Arr3[60] = "VAV_D1_442"
+	Arr3[61] = "VAV_D1_443"
+	Arr3[62] = "VAV_D1_444"
+	Arr3[63] = "VAV_D1_445"
+	Arr3[64] = "VAV_D1_446"
+	Arr3[65] = "VAV_D1_447"
+	Arr3[66] = "VAV_D1_448"
+	Arr3[67] = "VAV_D1_449"
+	Arr3[68] = "VAV_D1_450"
+	Arr3[69] = "VAV_D1_451"
+	Arr3[70] = "VAV_D1_452"
+	Arr3[71] = "VAV_D1_453"
+	Arr3[72] = "VAV_D1_454"
+	Arr3[73] = "VAV_D1_S_455_E_455"
+	Arr3[74] = "VAV_D1_456"
+	Arr3[75] = "VAV_D1_457"
+	Arr3[76] = "VAV_D1_458"
+	Arr3[77] = "VAV_D1_459"
+	Arr3[78] = "VAV_D1_460"
+	Arr3[79] = "VAV_D1_461"
+	Arr3[80] = "VAV_D1_462"
+	Arr3[81] = "VAV_D1_463"
+	Arr3[82] = "VAV_D1_464"
+	Arr3[83] = "VAV_D1_465"
+	Arr3[84] = "VAV_D1_466"
+	Arr3[85] = "VAV_D1_S_467_E_467"
+	Arr3[86] = "VAV_D1_468"
+	Arr3[87] = "VAV_D1_469"
+	Arr3[88] = "VAV_D1_470"
+	Arr3[89] = "VAV_D1_S_471_R_471"
+	Arr3[90] = "---"
+	Req0Cnt = 0
+	Req1Cnt = 0
+	Req2Cnt = 0
+	Req3Cnt = 0
+
+	For i = 1 to 89
+		If (Arr1[i] = 0) Then Req0Cnt = Req0Cnt + 1 Else Arr2[i] = 90	'Else clear Arr2 with index i (Arr3[90] = "---")
+		If (Arr1[i] = 1) Then Req1Cnt = Req1Cnt + 1 Else Arr2[i] = 90	'Else clear Arr2 with index i (Arr3[90] = "---")
+		If (Arr1[i] = 2) Then Req2Cnt = Req2Cnt + 1 Else Arr2[i] = 90	'Else clear Arr2 with index i (Arr3[90] = "---")
+		If (Arr1[i] = 3) Then
+			Req3Cnt = Req3Cnt + 1
+			Arr2[Req3Cnt] = i
+		Else
+			Arr2[i] = 90	'Else clear Arr2 with index i (Arr3[90] = "---")
+		Endif
+	Next i
+
+	vo_VavSaStPrSptRstReq = MaxItem(Req0Cnt, Req1Cnt, Req2Cnt, Req3Cnt) - 1
+	Vav01Label = Arr3[Arr2[1]]
+	Vav02Label = Arr3[Arr2[2]]
+	Vav03Label = Arr3[Arr2[3]]
+	Vav04Label = Arr3[Arr2[4]]
+	Vav05Label = Arr3[Arr2[5]]
+
+	goto RMTMPCALC
+
+RMTMPCALC:
+	Arr1[1] = VAV_D1_101_RmTmp
+	Arr1[2] = VAV_D1_102_RmTmp
+	Arr1[3] = VAV_D1_104_RmTmp
+	Arr1[4] = VAV_D1_105_RmTmp
+	Arr1[5] = VAV_D1_107_RmTmp
+	Arr1[6] = VAV_D1_108_RmTmp
+	Arr1[7] = VAV_D1_109_RmTmp
+	Arr1[8] = VAV_D1_110_RmTmp
+	Arr1[9] = VAV_D1_111_RmTmp
+	Arr1[10] = VAV_D1_112_RmTmp
+	Arr1[11] = VAV_D1_113_RmTmp
+	Arr1[12] = VAV_D1_118_RmTmp
+	Arr1[13] = VAV_D1_142_RmTmp
+	Arr1[14] = VAV_D1_S_318_R_318_RmTmp
+	Arr1[15] = VAV_D1_S_319_E_319_RmTmp
+	Arr1[16] = VAV_D1_320_RmTmp
+	Arr1[17] = VAV_D1_332_RmTmp
+	Arr1[18] = VAV_D1_333_RmTmp
+	Arr1[19] = VAV_D1_401_RmTmp
+	Arr1[20] = VAV_D1_E_325_RmTmp
+	Arr1[21] = VAV_D1_402_RmTmp
+	Arr1[22] = VAV_D1_403_RmTmp
+	Arr1[23] = VAV_D1_404_RmTmp
+	Arr1[24] = VAV_D1_405_RmTmp
+	Arr1[25] = VAV_D1_406_RmTmp
+	Arr1[26] = VAV_D1_407_RmTmp
+	Arr1[27] = VAV_D1_408_RmTmp
+	Arr1[28] = VAV_D1_409_RmTmp
+	Arr1[29] = VAV_D1_410_RmTmp
+	Arr1[30] = VAV_D1_411_RmTmp
+	Arr1[31] = VAV_D1_S_412_E_412_RmTmp
+	Arr1[32] = VAV_D1_413_RmTmp
+	Arr1[33] = VAV_D1_S_414_E_414_RmTmp
+	Arr1[34] = VAV_D1_S_415_E_415_RmTmp
+	Arr1[35] = VAV_D1_S_416_E_416_RmTmp
+	Arr1[36] = VAV_D1_S_417_E_417_RmTmp
+	Arr1[37] = VAV_D1_S_418_E_418_RmTmp
+	Arr1[38] = VAV_D1_S_419_E_419_RmTmp
+	Arr1[39] = VAV_D1_420_RmTmp
+	Arr1[40] = VAV_D1_421_RmTmp
+	Arr1[41] = VAV_D1_422_RmTmp
+	Arr1[42] = VAV_D1_423_RmTmp
+	Arr1[43] = VAV_D1_424_RmTmp
+	Arr1[44] = VAV_D1_425_RmTmp
+	Arr1[45] = VAV_D1_427_RmTmp
+	Arr1[46] = VAV_D1_428_RmTmp
+	Arr1[47] = VAV_D1_429_RmTmp
+	Arr1[48] = VAV_D1_430_RmTmp
+	Arr1[49] = VAV_D1_431_RmTmp
+	Arr1[50] = VAV_D1_432_RmTmp
+	Arr1[51] = VAV_D1_433_RmTmp
+	Arr1[52] = VAV_D1_S_434_E_434_RmTmp
+	Arr1[53] = VAV_D1_435_RmTmp
+	Arr1[54] = VAV_D1_436_RmTmp
+	Arr1[55] = VAV_D1_437_RmTmp
+	Arr1[56] = VAV_D1_438_RmTmp
+	Arr1[57] = VAV_D1_439_RmTmp
+	Arr1[58] = VAV_D1_440_RmTmp
+	Arr1[59] = VAV_D1_441_RmTmp
+	Arr1[60] = VAV_D1_442_RmTmp
+	Arr1[61] = VAV_D1_443_RmTmp
+	Arr1[62] = VAV_D1_444_RmTmp
+	Arr1[63] = VAV_D1_445_RmTmp
+	Arr1[64] = VAV_D1_446_RmTmp
+	Arr1[65] = VAV_D1_447_RmTmp
+	Arr1[66] = VAV_D1_448_RmTmp
+	Arr1[67] = VAV_D1_449_RmTmp
+	Arr1[68] = VAV_D1_450_RmTmp
+	Arr1[69] = VAV_D1_451_RmTmp
+	Arr1[70] = VAV_D1_452_RmTmp
+	Arr1[71] = VAV_D1_453_RmTmp
+	Arr1[72] = VAV_D1_454_RmTmp
+	Arr1[73] = VAV_D1_S_455_E_455_RmTmp
+	Arr1[74] = VAV_D1_456_RmTmp
+	Arr1[75] = VAV_D1_457_RmTmp
+	Arr1[76] = VAV_D1_458_RmTmp
+	Arr1[77] = VAV_D1_459_RmTmp
+	Arr1[78] = VAV_D1_460_RmTmp
+	Arr1[79] = VAV_D1_461_RmTmp
+	Arr1[80] = VAV_D1_462_RmTmp
+	Arr1[81] = VAV_D1_463_RmTmp
+	Arr1[82] = VAV_D1_464_RmTmp
+	Arr1[83] = VAV_D1_465_RmTmp
+	Arr1[84] = VAV_D1_466_RmTmp
+	Arr1[85] = VAV_D1_S_467_E_467_RmTmp
+	Arr1[86] = VAV_D1_468_RmTmp
+	Arr1[87] = VAV_D1_469_RmTmp
+	Arr1[88] = VAV_D1_470_RmTmp
+	Arr1[89] = VAV_D1_S_471_R_471_RmTmp
+	AvgSum = 0
+	AvgDiv = 0
+	TempHi = -999
+	TempLo = 999
+
+	For i = 1 to 89
+		If (Arr1[i] <> 0) and (Arr1[i] > -20) and (Arr1[i] < 200) Then
+			AvgSum = AvgSum + Arr1[i]
+			AvgDiv = AvgDiv + 1
+			TempHi = maximum(TempHi, Arr1[i])
+			TempLo = minimum (TempLo, Arr1[i])
+		Endif
+	Next i
+
+	If AvgDiv > 0 Then
+		vo_VavRmTmpAvg = AvgSum/AvgDiv
+	Else
+		vo_VavRmTmpAvg = 70
+	Endif
+
+	vo_VavRmTmpHi = TempHi
+	vo_VavRmTmpLo = TempLo
+
+	goto SATMPRESET
+
+SATMPRESET:
+	Arr1[1] = VAV_D1_101_RhtVlvPos
+	Arr1[2] = VAV_D1_102_RhtVlvPos
+	Arr1[3] = VAV_D1_104_RhtVlvPos
+	Arr1[4] = VAV_D1_105_RhtVlvPos
+	Arr1[5] = VAV_D1_107_RhtVlvPos
+	Arr1[6] = VAV_D1_108_RhtVlvPos
+	Arr1[7] = VAV_D1_109_RhtVlvPos
+	Arr1[8] = VAV_D1_110_RhtVlvPos
+	Arr1[9] = VAV_D1_111_RhtVlvPos
+	Arr1[10] = VAV_D1_112_RhtVlvPos
+	Arr1[11] = VAV_D1_113_RhtVlvPos
+	Arr1[12] = VAV_D1_118_RhtVlvPos
+	Arr1[13] = VAV_D1_142_RhtVlvPos
+	Arr1[14] = VAV_D1_S_318_R_318_RhtVlvPos
+	Arr1[15] = VAV_D1_S_319_E_319_RhtVlvPos
+	Arr1[16] = VAV_D1_320_RhtVlvPos
+	Arr1[17] = VAV_D1_332_RhtVlvPos
+	Arr1[18] = VAV_D1_333_RhtVlvPos
+	Arr1[19] = VAV_D1_401_RhtVlvPos
+	Arr1[20] = VAV_D1_E_325_RhtVlvPos
+	Arr1[21] = VAV_D1_402_RhtVlvPos
+	Arr1[22] = VAV_D1_403_RhtVlvPos
+	Arr1[23] = VAV_D1_404_RhtVlvPos
+	Arr1[24] = VAV_D1_405_RhtVlvPos
+	Arr1[25] = VAV_D1_406_RhtVlvPos
+	Arr1[26] = VAV_D1_407_RhtVlvPos
+	Arr1[27] = VAV_D1_408_RhtVlvPos
+	Arr1[28] = VAV_D1_409_RhtVlvPos
+	Arr1[29] = VAV_D1_410_RhtVlvPos
+	Arr1[30] = VAV_D1_411_RhtVlvPos
+	Arr1[31] = VAV_D1_S_412_E_412_RhtVlvPos
+	Arr1[32] = VAV_D1_413_RhtVlvPos
+	Arr1[33] = VAV_D1_S_414_E_414_RhtVlvPos
+	Arr1[34] = VAV_D1_S_415_E_415_RhtVlvPos
+	Arr1[35] = VAV_D1_S_416_E_416_RhtVlvPos
+	Arr1[36] = VAV_D1_S_417_E_417_RhtVlvPos
+	Arr1[37] = VAV_D1_S_418_E_418_RhtVlvPos
+	Arr1[38] = VAV_D1_S_419_E_419_RhtVlvPos
+	Arr1[39] = VAV_D1_420_RhtVlvPos
+	Arr1[40] = VAV_D1_421_RhtVlvPos
+	Arr1[41] = VAV_D1_422_RhtVlvPos
+	Arr1[42] = VAV_D1_423_RhtVlvPos
+	Arr1[43] = VAV_D1_424_RhtVlvPos
+	Arr1[44] = VAV_D1_425_RhtVlvPos
+	Arr1[45] = VAV_D1_427_RhtVlvPos
+	Arr1[46] = VAV_D1_428_RhtVlvPos
+	Arr1[47] = VAV_D1_429_RhtVlvPos
+	Arr1[48] = VAV_D1_430_RhtVlvPos
+	Arr1[49] = VAV_D1_431_RhtVlvPos
+	Arr1[50] = VAV_D1_432_RhtVlvPos
+	Arr1[51] = VAV_D1_433_RhtVlvPos
+	Arr1[52] = VAV_D1_S_434_E_434_RhtVlvPos
+	Arr1[53] = VAV_D1_435_RhtVlvPos
+	Arr1[54] = VAV_D1_436_RhtVlvPos
+	Arr1[55] = VAV_D1_437_RhtVlvPos
+	Arr1[56] = VAV_D1_438_RhtVlvPos
+	Arr1[57] = VAV_D1_439_RhtVlvPos
+	Arr1[58] = VAV_D1_440_RhtVlvPos
+	Arr1[59] = VAV_D1_441_RhtVlvPos
+	Arr1[60] = VAV_D1_442_RhtVlvPos
+	Arr1[61] = VAV_D1_443_RhtVlvPos
+	Arr1[62] = VAV_D1_444_RhtVlvPos
+	Arr1[63] = VAV_D1_445_RhtVlvPos
+	Arr1[64] = VAV_D1_446_RhtVlvPos
+	Arr1[65] = VAV_D1_447_RhtVlvPos
+	Arr1[66] = VAV_D1_448_RhtVlvPos
+	Arr1[67] = VAV_D1_449_RhtVlvPos
+	Arr1[68] = VAV_D1_450_RhtVlvPos
+	Arr1[69] = VAV_D1_451_RhtVlvPos
+	Arr1[70] = VAV_D1_452_RhtVlvPos
+	Arr1[71] = VAV_D1_453_RhtVlvPos
+	Arr1[72] = VAV_D1_454_RhtVlvPos
+	Arr1[73] = VAV_D1_S_455_E_455_RhtVlvPos
+	Arr1[74] = VAV_D1_456_RhtVlvPos
+	Arr1[75] = VAV_D1_457_RhtVlvPos
+	Arr1[76] = VAV_D1_458_RhtVlvPos
+	Arr1[77] = VAV_D1_459_RhtVlvPos
+	Arr1[78] = VAV_D1_460_RhtVlvPos
+	Arr1[79] = VAV_D1_461_RhtVlvPos
+	Arr1[80] = VAV_D1_462_RhtVlvPos
+	Arr1[81] = VAV_D1_463_RhtVlvPos
+	Arr1[82] = VAV_D1_464_RhtVlvPos
+	Arr1[83] = VAV_D1_465_RhtVlvPos
+	Arr1[84] = VAV_D1_466_RhtVlvPos
+	Arr1[85] = VAV_D1_S_467_E_467_RhtVlvPos
+	Arr1[86] = VAV_D1_468_RhtVlvPos
+	Arr1[87] = VAV_D1_469_RhtVlvPos
+	Arr1[88] = VAV_D1_470_RhtVlvPos
+	Arr1[89] = VAV_D1_S_471_R_471_RhtVlvPos
+	RhtCnt = 0
+
+	For i = 1 to 89
+		If (Arr1[i] >= vi_VavOpnRhtVlvPos) Then RhtCnt = RhtCnt + 1
+	Next i
+
+	vo_VavSaTmpSptRstReq = (RhtCnt >= (GetArraySize(Arr1) * vi_VavOpnRhtVlvPct / 100))
+
+	goto STPRRESET
+
+E:
+	if (TS > 10) then goto STPRRESET

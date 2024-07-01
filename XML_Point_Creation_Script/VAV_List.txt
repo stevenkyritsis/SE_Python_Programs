@@ -1,0 +1,5 @@
+Numeric Input VAV_D2_301_StPrRstReq_vi, VAV_D2_301_RmTmp_vi, VAV_D2_301_RhtVlvPos_vi
+Numeric Input VAV_D2_302_StPrRstReq_vi, VAV_D2_302_RmTmp_vi, VAV_D2_302_RhtVlvPos_vi
+Numeric Input VAV_D2_303_StPrRstReq_vi, VAV_D2_303_RmTmp_vi, VAV_D2_303_RhtVlvPos_vi
+Numeric Input VAV_D2_304_StPrRstReq_vi, VAV_D2_304_RmTmp_vi, VAV_D2_304_RhtVlvPos_vi
+Numeric Input VAV_D2_305_StPrRstReq_vi, VAV_D2_305_RmTmp_vi, VAV_D2_305_RhtVlvPos_vi
